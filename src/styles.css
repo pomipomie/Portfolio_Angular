@@ -1,0 +1,49 @@
+@import url(https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;500;600;700;800&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap);
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    box-sizing: border-box;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    --bgdcolor: #FFF7FD;
+    --blue: #0E043B;
+    --hoverblue: #1b0c5e;
+    --pink: hsl(331, 89%, 55%);
+    --grey: #bcbcbe;
+}
+
+html .dark {
+    --bgdcolor: #03010c;
+    --blue: #FFF7FD;
+    --grey: #242494;
+}
+
+body {
+    margin: 0;
+    background-color: var(--bgdcolor);
+    font-size: 5.5vw;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+body>* {
+    max-width: 100%;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+p {
+    margin: 0;
+}
