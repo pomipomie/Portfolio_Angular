@@ -2,11 +2,13 @@
     <h2 class="card_title">Projects</h2>
     <div class="content_container">
         <article class="card_content" *ngFor="let project of projects" id="p{{project.projId}}">
-            <h3>{{project.pname}}</h3>
-            <p id="desc">{{project.pdescription}}</p>
-            <img src="{{project.ppreview}}" alt="preview for {{project.pname}}" />
+            <h3>{{project?.pname}}</h3>
+            <p id="desc">{{project?.pdescription}} <br/>
+                <a class="repo_a" href="{{project?.prepo}}" *ngIf="project.prepo!=null"><i class="bi bi-github"></i> Repository</a>
+            </p>
+            <a href="{{project?.purl}}" ><img src="{{project?.ppreview}}" alt="preview for {{project?.pname}}" /></a>
             <div class="tag_container">
-                <p *ngFor="let skill of project.skills" class="tag_btn" id="ps{{skill.skillId}}">{{skill.skillName}}</p>
+                <p *ngFor="let skill of project.skills" class="tag_btn" id="ps{{skill?.skillId}}">{{skill?.skillName}}</p>
             </div>
         </article>
     </div>

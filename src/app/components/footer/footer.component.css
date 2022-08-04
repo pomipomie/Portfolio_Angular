@@ -1,0 +1,34 @@
+footer {
+    background-color: var(--pink);
+    position: relative;
+    top: -2vh;
+    padding: 3vmin;
+    color: var(--bgdcolor);
+}
+
+p {
+    font-size: calc(.5rem + 1.4vmin);
+}
+
+a {
+    font-weight: 600;
+}
+
+a:hover {
+    color: var(--hoverblue);
+}
+
+img {
+    max-width: 1.1em;
+    max-height: auto;
+    position: relative;
+    top: .25em;
+}
+
+#springico {
+    max-width: 5em;
+}
+
+#springico:hover {
+    filter: invert(1);
+}
