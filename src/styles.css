@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;500;600;700;800&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300;400;500;600;700;800&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap);
 
 html {
@@ -44,6 +44,85 @@ textarea {
   margin: 0;
 }
 
-p {
+a:any-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+p, h1, h2, h3, h4, h5 {
     margin: 0;
+}
+
+#card_container {
+    position: relative;
+    top: -15vh;
+}
+
+.card_title {
+    margin: 1em 0;
+    font-family: 'Encode Sans', sans-serif;
+    font-size: 5vmin;
+    color: var(--blue);
+    text-align: center;
+    text-shadow:
+    -1px -1px 0 var(--bgdcolor),  
+    1px -1px 0 var(--bgdcolor),
+    -1px 1px 0 var(--bgdcolor),
+    1px 1px 0 var(--bgdcolor);
+    z-index: 2;
+    position: relative;
+}
+
+.card_title::before {
+    content: "";
+    background-color: var(--pink);
+    width: 90%;
+    height: 1.15em;
+    position: absolute;
+    left: -4vw;
+    top: -1.75vh;
+    z-index: -1;
+    border-radius: 0 1.25em 1.25em 0;
+}
+
+.content_container {
+    display: flex;
+    padding: 0 1em 1em 1em;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    gap: .5em;
+}
+
+.card_content {
+    color: var(--blue);
+}
+
+.card_content h3 {
+    font-family: 'Encode Sans', sans-serif;
+    font-size: 4.5vmin;
+    font-weight: 600;
+}
+
+.card_content p {
+    font-size: calc(.55rem + 1.5vmin);
+    font-weight: 300;
+    margin: .5em auto;
+}
+
+.tag_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2vmin;
+    margin: auto;
+}
+
+.tag_btn {
+    background-color: var(--hoverblue);
+    color: var(--bgdcolor);
+    padding: .6em;
+    border-radius: .7em;
+    letter-spacing: .05em;
+    font-family: 'Encode Sans', sans-serif;
 }

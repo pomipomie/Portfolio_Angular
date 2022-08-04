@@ -1,0 +1,18 @@
+#cpenico {
+    width: 1.1em;
+    height: 1.2em;
+    position: relative;
+    top: 0.25em;
+}
+
+#codepen {
+    position: relative;
+    top: -.25em;
+}
+
+a, h4 {
+    color: var(--blue);
+    font-family: 'Encode Sans', sans-serif;
+    font-size: calc(.6rem + 2vmin);
+    font-weight: 600;
+}

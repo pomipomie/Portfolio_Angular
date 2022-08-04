@@ -1,0 +1,13 @@
+<div class="container" id="projects_container">
+    <h2 class="card_title">Projects</h2>
+    <div class="content_container">
+        <article class="card_content" *ngFor="let project of projects" id="p{{project.projId}}">
+            <h3>{{project.pname}}</h3>
+            <p id="desc">{{project.pdescription}}</p>
+            <img src="{{project.ppreview}}" alt="preview for {{project.pname}}" />
+            <div class="tag_container">
+                <p *ngFor="let skill of project.skills" class="tag_btn" id="ps{{skill.skillId}}">{{skill.skillName}}</p>
+            </div>
+        </article>
+    </div>
+</div>
