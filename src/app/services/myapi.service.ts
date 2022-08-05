@@ -24,4 +24,8 @@ export class MyapiService {
     return this.http.get<any>(this.url+"projects/list");
   }
 
+  getEducationData():Observable<any> {
+    return this.http.get<any>(this.url+"education/list");
+  }
+
 }

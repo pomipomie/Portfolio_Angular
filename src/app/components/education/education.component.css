@@ -1,0 +1,28 @@
+h4 {
+    display: inline;
+}
+
+.date {
+    display: inline;
+    margin-left: .5em;
+}
+
+.place {
+    margin-top: 0;
+}
+
+.edulinks>* {
+    display: inline-block;
+    margin: 0 .5em auto auto;
+}
+
+.tag_btn {
+    width: fit-content;
+    font-size: 3.2vmin;
+    font-weight: 500;
+    margin-left: 0;
+    padding: .35em;
+    border: 1px solid var(--blue);
+    background-color: var(--bgdcolor);
+    color: var(--blue);
+}

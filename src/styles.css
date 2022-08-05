@@ -104,6 +104,12 @@ p, h1, h2, h3, h4, h5 {
     font-weight: 600;
 }
 
+.card_content h4 {
+    font-family: 'Encode Sans', sans-serif;
+    font-size: 4vmin;
+    font-weight: 500;
+}
+
 .card_content p {
     font-size: calc(.55rem + 1.5vmin);
     font-weight: 300;

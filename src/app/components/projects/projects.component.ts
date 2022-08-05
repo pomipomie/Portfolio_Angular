@@ -10,7 +10,6 @@ export class ProjectsComponent implements OnInit {
 
   projects:Array<any> | undefined;
   project:any;
-  // hasRepo:boolean = false;
 
   constructor(private projectData:MyapiService) { }
 
@@ -18,7 +17,6 @@ export class ProjectsComponent implements OnInit {
     this.projectData.getProjectsData().subscribe( data => {
       this.projects = data;
     })
-    // this.project.prepo !=null ? this.hasRepo = true : this.hasRepo = false;
   }
 
 }

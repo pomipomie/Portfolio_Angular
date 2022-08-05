@@ -1,0 +1,18 @@
+<div class="container" id="education_container">
+    <h2 class="card_title">Education</h2>
+    <div class="content_container">
+        <article class="card_content" *ngFor="let edu of edus" id="ed{{edu.edujId}}">
+            <h3>{{edu.title}}</h3>
+            <h4>{{edu.institution}}</h4>
+            <p class="date" *ngIf="edu.endDate"><i class="bi bi-mortarboard"></i> {{edu?.endDate | date:"yyyy"}}</p>
+            <p class="date" *ngIf="!edu.endDate"><i class="bi bi-book-half"></i> Ongoing</p>
+            <p class="place" *ngIf="edu.place!= null || 'online'">{{edu?.place}}</p>
+            <p>{{edu?.educInfo}}</p>
+            <div class="edulinks">
+                <a href="{{edu?.educUrl}}" target="_blank"><p><i class="bi bi-globe2"></i> Website</p></a>
+                <a href="{{edu?.certif}}" target="_blank" *ngIf="edu.certif"><p><i class="bi bi-file-earmark-richtext-fill"></i> Certificate</p></a>
+            </div>
+            <p class="tag_btn">{{edu.eduTId.eduType}}</p>
+        </article>
+    </div>
+</div>
