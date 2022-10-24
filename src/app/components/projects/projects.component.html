@@ -6,7 +6,7 @@
             <p id="desc">{{project?.pdescription}} <br/>
                 <a class="repo_a" href="{{project?.prepo}}" *ngIf="project.prepo!=null"><i class="bi bi-github"></i> Repository</a>
             </p>
-            <a href="{{project?.purl}}" ><img src="{{project?.ppreview}}" alt="preview for {{project?.pname}}" /></a>
+            <a href="{{project?.purl}}" class="img_container"><img src="{{project?.ppreview}}" alt="preview for {{project?.pname}}" /></a>
             <div class="tag_container">
                 <p *ngFor="let skill of project.skills" class="tag_btn" id="ps{{skill?.skillId}}">{{skill?.skillName}}</p>
             </div>

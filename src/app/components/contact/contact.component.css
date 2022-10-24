@@ -16,3 +16,9 @@ a, h4 {
     font-size: calc(.6rem + 2vmin);
     font-weight: 600;
 }
+
+@media screen and (min-width: 1000px) {
+    a, h4 {
+        font-size: 2rem;
+    }
+}

@@ -5,29 +5,50 @@ nav {
     margin: 0;
     position: fixed;
     z-index: 6;
-    padding: .3em 0;
+    padding: .2em 0;
 }
 
 #nav_ul {
-    margin: 0;
-    padding: .5em 0;
-    width: 100%;
+    margin: 0 4vw;
+    padding: .2em 0;
+    max-width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
     text-align: center;
     font-family: 'Encode Sans', sans-serif;
     font-weight: 600;
-    font-size: 4.5vmin;
+    font-size: .65em;
     list-style-type: none;
 }
 
 #nav_ul i {
-    font-size: 1.4em;
+    font-size: 1.5em;
 }
 
 #toggles {
     display: none;
+}
+
+@media screen and (min-width: 600px) {
+    #nav_ul {
+        font-size: .5em;
+        padding: .1em 0;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #nav_ul {
+        font-size: .4em;
+        padding: .06em 0;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    #nav_ul {
+        font-size: .3em;
+        padding: .03em 0;
+    }
 }

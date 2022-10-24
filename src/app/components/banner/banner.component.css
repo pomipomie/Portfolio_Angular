@@ -1,9 +1,0 @@
-#banner_container {
-    max-width: 100%;
-    z-index: 0;
-}
-
-#banner_container img {
-    max-width: 100%;
-    /* clip-path: inset(0 0 20% 0); */
-}

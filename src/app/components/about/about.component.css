@@ -1,8 +1,15 @@
+#banner_container {
+    background-color: var(--pink);
+    background-image: url("https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+    background-size: cover;
+    display: block;
+    width: 100vw;
+    height: 40vmin;
+}
+
 #about_container {
     background-color: var(--pink);
     z-index: 3;
-    position: relative;
-    top: -15vh;
     display: grid;
     justify-content: stretch;
     grid-template-areas: "avatar_s about_s about_s";
@@ -30,11 +37,11 @@
 
 #avatar_pic img {
     background-color: var(--blue);
-    border: 0.4em solid var(--blue);
+    border: 0.4em solid transparent;
     border-radius: 1.25em;
     z-index: 5;
     position: relative;
-    max-width: 95%;
+    max-width: 100%;
     height: auto;
     vertical-align: middle;
 }
@@ -45,7 +52,7 @@
     top: -8vh;
     font-family: 'Encode Sans', sans-serif;
     font-weight: 600;
-    font-size: 4.9vmin;
+    font-size: calc(.5rem + 3vw);
 }
 
 h5 {
@@ -53,9 +60,10 @@ h5 {
     position: relative;
     top: -7vh;
     font-family: 'Encode Sans', sans-serif;
-    font-size: calc(.5rem + 1.5vmin);
+    font-size: calc(.5rem + 1.6vw);
     margin: .5em;
     text-shadow: 1.5px 1.5px 0 var(--blue);
+    z-index: 2;
 }
 
 h5::before {
@@ -71,7 +79,7 @@ h5::before {
 }
 
 h2 {
-    font-size: 4.9vmin;
+    font-size: calc(.5rem + 3vw);
     text-shadow: 1.5px 1.5px 0 var(--blue), 2px 2px 0 var(--blue);
     font-weight: 600;
     margin-top: .6em;
@@ -93,7 +101,33 @@ h2::before {
 }
 
 p {
-    font-size: calc(.5rem + 1.5vmin);
+    font-size: calc(.5rem + 1.5vw);
     margin: 1.4em;
     font-weight: 300;
+    line-height: 1.25;
+}
+
+@media screen and (min-width: 900px) {
+    h5 {
+        top: -13vh;
+    }
+    #avatar_text {
+        top: -14vh;
+    }
+    #avatar_pic {
+        top: -13vh;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #avatar_text, h2 {
+        font-size: 2.75rem;
+    }
+    p {
+        font-size: 1.7rem;
+        margin: 2em 4em;
+    }
+    h5 {
+        font-size: 1.7rem;
+    }
 }

@@ -13,13 +13,22 @@ a {
     grid-row: 2 /3;
 }
 
+.img_container {
+    background-color: var(--blue);
+    width: fit-content;
+    height: fit-content;
+    border-radius: 1rem;
+    box-sizing: border-box;
+}
+
 img {
     max-width: 30vw;
     height: auto;
-    border-radius: .4em;
-    border: .15em solid var(--blue);
+    border-radius: .8rem;
+    /* border: .1em solid var(--blue); */
     margin: .5rem;
     cursor: pointer;
+    vertical-align: middle;
 }
 
 img:hover {
@@ -29,6 +38,7 @@ img:hover {
 #desc {
     grid-row: 2 / 3;
     margin-left: 0;
+    margin-right: 1.5em;
 }
 
 .tag_container {
@@ -45,4 +55,10 @@ img:hover {
     padding-top: .5em;
     display: block;
     font-weight: 500;
+}
+
+@media screen and (min-width: 1000px) {
+    .tag_btn {
+        font-size: 1.7rem;
+    }
 }

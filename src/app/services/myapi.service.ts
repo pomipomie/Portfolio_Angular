@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class MyapiService {
-  url: string = "/pdata/" //change in prod
+  url: string = "https://pzxrslcdua.us09.qoddiapp.com/pdata/"
 
   constructor(private http:HttpClient) {
     console.log("myapi running");
